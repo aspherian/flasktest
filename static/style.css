@@ -1,0 +1,63 @@
+body {
+    background-size: contain;
+    font-family: Helvetica, serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.site-header {
+    border-bottom: 1px solid #ccc;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.site-identity h1 {
+    font-size: 1.5em;
+    margin: 1em 1em 1em 1em;
+    display: inline-block;
+}
+
+.site-navigation ul,
+.site-navigation li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    margin: 1.4em 1em 1em 1em;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cityselect {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    background: gray;
+    opacity: 80%;
+    align-items: center;
+}
+
+.selectorcss {
+    margin: 1em;
+}
+
+.cityinfo {
+    font-family: Calibri, serif;
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+    background: gray;
+    opacity: 80%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 25px;
+}
