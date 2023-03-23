@@ -53,11 +53,26 @@ a {
 .cityinfo {
     font-family: Calibri, serif;
     justify-content: center;
-    width: 500px;
+    width: 300px;
     margin: 0 auto;
     background: gray;
     opacity: 80%;
     text-align: center;
     border: 2px solid black;
-    font-size: 25px;
+    font-size: 20px;
+    display: inline-block;
+    inline-size: 300px;
+    overflow-wrap: break-word;
+    vertical-align: middle;
+}
+
+
+.cityline {
+    margin: auto;
+    text-align: center;
+}
+
+.img{
+    width: 100%;
+    height: 100%;
 }

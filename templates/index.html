@@ -44,12 +44,27 @@
     </div>
 </div>
 <p></p>
-<div class="cityinfo">
+<div class="cityline">
+    <div class="cityinfo">
     {% if content %}
-    <img src="{{url_for('static', filename = img) }}"/>
+    <img class="img" src="{{url_for('static', filename = img) }}"/>
     {{ content }}
     {% endif %}
+    </div>
+    <div class="cityinfo">
+    {% if content %}
+    <img class="img" src="{{url_for('static', filename = img1) }}"/>
+    {{ content1 }}
+    {% endif %}
+    </div>
+    <div class="cityinfo">
+    {% if content %}
+    <img class="img" src="{{url_for('static', filename = img2) }}"/>
+    {{ content2 }}
+    {% endif %}
+    </div>
 </div>
+
 
 </body>
 </html>
