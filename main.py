@@ -14,7 +14,7 @@ infocity = {
         'img1': 'ekb.png',
         'content2': 'AZIMUT Сити.\n ''Один из отелей Екатеринбурга, достойный быть названным лучшим.\n ''50т. рублей за ночь',
         "img2": 'spb.png',
-        "name" : "Moscow"
+        "name": "Москва"
     },
     'ekb': {
         'content': 'Хаятт Плейc. Крутой пятизвездочный отель прямо в центре Екатеринбурга.\n 35т. рублей за ночь',
@@ -23,9 +23,9 @@ infocity = {
         "img1": 'spb.png',
         'content2': 'Арарат Парк Хаятт.\n''Один из лучших отелей Екатеринбурга, который подарит вам незабываемые '
                     'впечатления от посещения этого'
-                   'города.\n ''40т. рублей за ночь',
+                    'города.\n ''40т. рублей за ночь',
         'img2': 'msk.png',
-        "name" : "Ekaterinburg"
+        "name": "Екатеринбург"
     },
     'spb': {
         'content': 'AZIMUT Сити.\n ''Один из отелей Санкт-Петербурга, достойный быть названным лучшим.\n ''50т. рублей за ночь',
@@ -34,21 +34,20 @@ infocity = {
         'img1': 'ekb.png',
         'content2': 'Арарат Парк Хаятт.\n''Один из лучших отелей Екатеринбурга, который подарит вам незабываемые '
                     'впечатления от посещения этого'
-                   'города.\n ''40т. рублей за ночь',
+                    'города.\n ''40т. рублей за ночь',
         'img2': 'msk.png',
-        "name" : "Saint-Petersburg"
+        "name": "Санкт-Петербург"
     },
-    'nsk' : {
-        "name" : "Novosibirsk",
+    'nsk': {
+        "name": "Новосибирск",
     },
-    'irk' : {
-        "name" : "Irkutsk"
+    'irk': {
+        "name": "Иркутск"
     },
-    'bar' : {
-        "name" : "Barnaul"
+    'bar': {
+        "name": "Барнаул"
     }
 }
-
 
 
 @app.route('/', methods=['GET', 'POST'])
@@ -74,7 +73,8 @@ def content():
     distance = int(geodesic((location1.latitude, location1.longitude), (location2.latitude, location2.longitude)).km)
     vremya = int(distance / 360)
     price = distance * 3
-    return render_template('index.html', content=content, img=img, content1=content1, img1=img1, content2=content2, img2=img2, distance=distance, vremya=vremya, price = price, name0=name0, name1=name1)
+    return render_template('index.html', content=content, img=img, content1=content1, img1=img1, content2=content2,
+                           img2=img2, distance=distance, vremya=vremya, price=price, name0=name0, name1=name1)
 
 
 if __name__ == "__main__":
