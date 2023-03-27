@@ -31,17 +31,29 @@
 
 </p>
 <div class="cityselect">
-    <h2>Из Новосибирска в </h2>
-    <div>
-        <form , , action="/content" class="selectorcss" method="GET">
-            <select name="selector">
-                <option value="msk">Москва</option>
-                <option value="ekb">Екатеринбург</option>
-                <option value="spb">Санкт-Петербург</option>
-            </select>
-            <input type="submit" value="Подтвердить">
-        </form>
-    </div>
+    <h2>Из</h2>
+    <form action="/content" class="selectorcss" method="GET">
+        <select name="selector">
+            <option value="nsk">Новосибирска</option>
+            <option value="irk">Иркутска</option>
+            <option value="bar">Барнаула</option>
+        </select>
+        <h2>в</h2>
+        <select name="selector1">
+            <option value="msk">Москву</option>
+            <option value="ekb">Екатеринбург</option>
+            <option value="spb">Санкт-Петербург</option>
+        </select>
+        <input type="submit" value="Подтвердить">
+    </form>
+</div>
+<p></p>
+<div class="citydistance">
+    {% if content %}
+    <h2> Расстояние между городами {{ name0 }} и {{ name1 }}: {{ distance }} километров. </h2>
+    <h2> Время перелёта составит {{ vremya }} часов. </h2>
+    <h2> Стоимость перелёта составит {{ price }} рублей. </h2>
+    {% endif %}
 </div>
 <p></p>
 <div class="cityline">
